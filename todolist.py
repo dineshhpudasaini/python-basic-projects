@@ -10,7 +10,7 @@ try:
 
     elif(task == "w"):
         with open("task.txt","a") as file : 
-            file.write(input("Enter the task: "+ "\n"))
+            file.write(input("Enter the task: ")+"\n")
 
     else:
         print("Invalid Input")
