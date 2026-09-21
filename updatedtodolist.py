@@ -2,17 +2,23 @@ def write():
     with open("task.txt","a") as file:
         file.write(input("Enter The tasks You need to complete: "+ "\n"))
 
+
 def read():
     with open("task.txt","r") as file:
         data = file.read()
         print(data)
 
+
 def delete():
     with open("task.txt", "r") as file:
         tasks = file.readlines()
 
+
+
     for i, task in enumerate(tasks, 1):
        print(i, task.strip())
+
+       
 
     number = int(input("Which task is completed? "))
 
@@ -39,6 +45,7 @@ while True: # type: ignore
 
     elif choice ==3:
         delete()
+
 
     else:
         print("Invalid input")
